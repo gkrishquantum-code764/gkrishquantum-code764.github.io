@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B & B Interactive Hub</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #0f172a; color: #f8fafc; min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: 2.2rem; color: #38bdf8; margin-bottom: 8px; }
+    header p { color: #94a3b8; font-size: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card {
+      background: #1e293b; border: 1px solid #334155; border-radius: 12px;
+      padding: 24px; transition: transform 0.2s, border-color 0.2s;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #38bdf8; }
+    .badge {
+      display: inline-block; background: #0284c7; color: #fff;
+      font-size: 0.75rem; padding: 3px 10px; border-radius: 999px; margin-bottom: 12px; width: fit-content;
+    }
+    .card h2 { font-size: 1.25rem; margin-bottom: 10px; color: #f1f5f9; }
+    .card p { font-size: 0.9rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 20px; }
+    .btn {
+      display: inline-block; text-align: center; background: #38bdf8; color: #0f172a;
+      font-weight: 600; text-decoration: none; padding: 10px 16px; border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #7dd3fc; }
+    .btn.disabled { background: #334155; color: #94a3b8; pointer-events: none; }
+    footer { text-align: center; margin-top: 50px; color: #64748b; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>B & B Interactive Hub</h1>
+      <p>Mathematics Simulations &amp; Educational Web Applications</p>
+    </header>
+
+    <div class="grid">
+      <!-- Project 1: Already Live -->
+      <div class="card">
+        <div>
+          <span class="badge">Mathematics • Grade 9/10</span>
+          <h2>B &amp; B Linear Programming</h2>
+          <p>Interactive graphical solver and visualizer for linear inequalities and optimization problems.</p>
+        </div>
+        <a class="btn" href="https://gkrishquantum-code764.github.io/B-B-Linear-Programming/" target="_blank">Open App</a>
+      </div>
+
+      <!-- Project 2: Placeholder for Trigonometry or Conic Sections -->
+      <div class="card">
+        <div>
+          <span class="badge">Trigonometry</span>
+          <h2>Class 10 Trigonometry Solver</h2>
+          <p>Step-by-step trigonometric identities proof and formula bank for SEE preparation.</p>
+        </div>
+        <a class="btn disabled" href="#">Coming Soon</a>
+      </div>
+
+      <!-- Project 3: Placeholder for 3D Geometry / Simulations -->
+      <div class="card">
+        <div>
+          <span class="badge">3D Simulation</span>
+          <h2>Conic Sections &amp; Transformations</h2>
+          <p>Interactive 2D/3D visual classroom models for circles, sine waves, and geometry.</p>
+        </div>
+        <a class="btn disabled" href="#">Coming Soon</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 B &amp; B Educational &amp; Tech Projects
+    </footer>
+  </div>
+</body>
+</html>
